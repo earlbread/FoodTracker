@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EKD-Wy-Ckt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="EKD-Wy-Ckt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -48,6 +48,7 @@
                                     <outlet property="nameLabel" destination="em4-PW-2gA" id="URM-Cz-fni"/>
                                     <outlet property="photoImageView" destination="F4I-xf-aYq" id="iMD-It-zfS"/>
                                     <outlet property="ratingControl" destination="HjU-kZ-hca" id="5re-nF-Obz"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="TYL-Mh-7bz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -183,10 +184,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLi-9p-U62" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1146" y="538"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="TYL-Mh-7bz"/>
+    </inferredMetricsTieBreakers>
 </document>
